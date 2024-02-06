@@ -8,4 +8,4 @@
 6. Отфильтрованные строки выводятся на экран.
 
 
-![Схема рабоы кода:](/Users/admin/Documents/GitHub/passing-the-test)
+![Схема рабоы кода:](https://github.com/HaruIshida/passing-the-test/blob/main/Снимок%20экрана%202024-02-06%20в%2017.35.49.png)
