@@ -1,25 +1,19 @@
-def filter_short_strings(strings):
-    new_strings = []
-    for string in strings:
+def filter_strings(input_array):
+    output_array = []
+    for string in input_array:
         if len(string) <= 3:
-            new_strings.append(string)
-    return new_strings
+            output_array.append(string)
+    return output_array
 
+# Ввод массива с клавиатуры
+input_array = input("Введите элементы массива через запятую: ").split(", ")
 
-def main():
-    n = int(input("Введите количество строк: "))
-    strings = []
-    for _ in range(n):
-        string = input("Введите строку: ")
-        strings.append(string)
+# Вызов функции для фильтрации массива
+result_array = filter_strings(input_array)
 
-    filtered_strings = filter_short_strings(strings)
-
-    print("Отфильтрованные строки:")
-    for string in filtered_strings:
-        print(string)
-
-
-if __name__ == "__main__":
-    main()
-
+if len(result_array) <= 3:
+    # Вывод результата
+    print(result_array)
+else:
+    # Вывод первых трех строк из отфильтрованного массива
+    print(result_array[:3])
